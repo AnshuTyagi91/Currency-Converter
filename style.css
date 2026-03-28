@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: #f4e4ba;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: #2c3e50;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+}
+
+.amount p {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.amount input {
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.amount input:focus {
+  border-color: #3498db;
+  background: #ffffff;
+}
+
+.dropdown {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.dropdown .from,
+.dropdown .to {
+  flex: 1;
+  min-width: 140px;
+}
+
+.dropdown p {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  background: #fff;
+}
+
+.select-container img {
+  width: 24px;
+  height: 20px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.select-container select {
+  flex: 1;
+  padding: 0.4rem 0;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.dropdown i {
+  margin-top: 1.8rem;
+  font-size: 1.4rem;
+  color: #999;
+}
+
+.msg {
+  padding: 0.8rem 1rem;
+  text-align: center;
+  background: #e8f4f9;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  border: 1px solid #d0e6f3;
+}
+
+button {
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .dropdown {
+    flex-direction: column;
+  }
+
+  .dropdown i {
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+}
